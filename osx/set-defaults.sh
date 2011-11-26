@@ -18,3 +18,10 @@ defaults write com.apple.Finder FXPreferredViewStyle Nlsv
 
 # Show the ~/Library folder
 chflags nohidden ~/Library
+
+# enable AirDrop for all devices, e.g. LAN
+defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
+
+# enable better font smoothing
+defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
+
