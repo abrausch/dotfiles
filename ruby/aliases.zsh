@@ -1,4 +1,4 @@
-alias r='rvm use 1.8.7'
+alias r='rbenv shell system'
 
 alias sc='script/console'
 alias sg='script/generate'
