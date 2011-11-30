@@ -25,3 +25,10 @@ defaults write com.apple.NetworkBrowser BrowseAllInterfaces 1
 # enable better font smoothing
 defaults -currentHost write -globalDomain AppleFontSmoothing -int 1
 
+# disable new window animation
+defaults write NSGlobalDomain NSAutomaticWindowAnimationsEnabled -bool NO
+
+# disable mail animations
+defaults write com.apple.Mail DisableReplyAnimations -bool YES
+defaults write com.apple.Mail DisableSendAnimations -bool YES
+
