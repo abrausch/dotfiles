@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple Computer//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>name</key>
+	<string>BlogMate</string>
+	<key>ordering</key>
+	<array>
+		<string>61211A81-8788-410F-BBD3-7EC4472DE59D</string>
+		<string>0FBBCA56-3EC6-4AF3-BC08-ECD63665C1D9</string>
+		<string>9FA44B15-5316-43BC-B945-B7798179070E</string>
+	</array>
+	<key>uuid</key>
+	<string>EB2E71B0-6879-429B-BBA7-4CD190EAB5E7</string>
+</dict>
+</plist>

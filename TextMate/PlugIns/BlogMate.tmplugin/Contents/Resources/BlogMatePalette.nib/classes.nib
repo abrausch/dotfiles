@@ -1,0 +1,45 @@
+{
+    IBClasses = (
+        {
+            ACTIONS = {
+                addBlog = id; 
+                beginEditingSelectedPost = id; 
+                completeAuth = id; 
+                deleteCurrentPost = id; 
+                endSheet = id; 
+                fetchPostsForSelectedBlog = id; 
+                openNewTextMateDocument = id; 
+                removeCurrentBlog = id; 
+                runEditBlogSettingsSheet = id; 
+                sendCurrentPost = id; 
+                visitBlog = id; 
+            }; 
+            CLASS = BlogMateController; 
+            LANGUAGE = ObjC; 
+            OUTLETS = {
+                authPasswordTextField = NSTextField; 
+                authUsernameTextField = NSTextField; 
+                blogService = id; 
+                blogSettingsSheet = NSWindow; 
+                blogsController = NSArrayController; 
+                categoriesController = NSArrayController; 
+                categoryTableView = NSTableView; 
+                createPostSheet = NSWindow; 
+                editPostSheet = NSWindow; 
+                httpAuthSheet = NSPanel; 
+                postDescriptionWebView = WebView; 
+                postTableView = NSTableView; 
+            }; 
+            SUPERCLASS = NSWindowController; 
+        }, 
+        {CLASS = BlogMatePostTableView; LANGUAGE = ObjC; SUPERCLASS = NSTableView; }, 
+        {CLASS = BorderView; LANGUAGE = ObjC; SUPERCLASS = NSView; }, 
+        {
+            ACTIONS = {completeAuth = id; }; 
+            CLASS = FirstResponder; 
+            LANGUAGE = ObjC; 
+            SUPERCLASS = NSObject; 
+        }
+    ); 
+    IBVersion = 1; 
+}
