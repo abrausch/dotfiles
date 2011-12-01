@@ -3,7 +3,7 @@ autoload colors && colors
 # http://github.com/ehrenmurdick/config/blob/master/zsh/prompt.zsh
 
 git_branch() {
-  echo $(/usr/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
+  echo $(/usr/local/bin/git symbolic-ref HEAD 2>/dev/null | awk -F/ {'print $NF'})
 }
 
 git_dirty() {
@@ -12,7 +12,7 @@ git_dirty() {
   then
     echo ""
   else
-    if [[ $st == "nothing to commit" ]]
+    if [[ $st == "nothing to commit (working directory clean)" ]]
     then
       echo "on %{$fg_bold[green]%}$(git_prompt_info)%{$reset_color%}"
     else
