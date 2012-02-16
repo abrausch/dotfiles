@@ -2,7 +2,7 @@
 export ZSH=$HOME/.dotfiles
 
 # your project folder that we can `c [tab]` to
-export PROJECTS=~/Development
+export PROJECTS=~/Projekte/Caperwhite/git/
 
 # source every .zsh file in this rep
 for config_file ($ZSH/**/*.zsh) source $config_file
@@ -22,3 +22,12 @@ compinit
 for config_file ($ZSH/**/completion.sh) source $config_file
 
 eval "$(rbenv init -)"
+
+setopt promptsubst
+
+# Load the prompt theme system
+autoload -U promptinit
+promptinit
+
+# Use the wunjo prompt theme
+prompt grb
