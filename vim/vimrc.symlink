@@ -5,7 +5,7 @@ set noswapfile
 " Pathogen settings 
 " ----------------------------------------------------------------------------
 call pathogen#infect()
-
+call pathogen#helptags()
 " ----------------------------------------------------------------------------
 "  Text Formatting
 " ----------------------------------------------------------------------------
@@ -13,15 +13,6 @@ call pathogen#infect()
 set autoindent             " automatic indent new lines
 set smartindent            " be smart about it
 inoremap # X<BS>#
-set nowrap                 " do not wrap lines
-set softtabstop=2          " yep, two
-set shiftwidth=2           " ..
-set tabstop=4
-set expandtab              " expand tabs to spaces
-set nosmarttab             " fuck tabs
-set formatoptions+=n       " support for numbered/bullet lists
-"set textwidth=80           " wrap at 80 chars by default
-set virtualedit=block      " allow virtual edit in visual block ..
 
 " ----------------------------------------------------------------------------
 "  Remapping
@@ -78,10 +69,8 @@ set nostartofline          " don't jump to the start of line when scrolling
 
 set showmatch              " brackets/braces that is
 set mat=5                  " duration to show matching brace (1/10 sec)
-set incsearch              " do incremental searching
 set laststatus=2           " always show the status line
 set ignorecase             " ignore case when searching
-set nohlsearch             " don't highlight searches
 set visualbell             " shut the fuck up
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set cursorline
@@ -105,3 +94,12 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
   \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+
+" ------
+" TagList
+" -------
+let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
+
+" Source settings.vim
+exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/settings.vim'
+

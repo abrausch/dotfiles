@@ -1,4 +1,4 @@
-colorscheme desert
+colorscheme desert256
 set anti
 set lines=70 columns=180
 set guioptions=egmrt
