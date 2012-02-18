@@ -11,7 +11,6 @@ call pathogen#helptags()
 " ----------------------------------------------------------------------------
 
 set autoindent             " automatic indent new lines
-set smartindent            " be smart about it
 inoremap # X<BS>#
 
 " ----------------------------------------------------------------------------
@@ -45,6 +44,10 @@ nnoremap <F8> :!/usr/local/bin/ctags -R  **/*.py<CR>
 nnoremap <F4> :TlistToggle<CR>
 nnoremap <C-f><C-f> :FufFile<CR>
 
+cnoremap %% <C-R>=expand('%:h').'/'<cr>
+map <leader>e :edit %%
+map <leader>v :view %%
+nnoremap <leader><leader> <C-^>
 " ----------------------------------------------------------------------------
 "  UI
 " ----------------------------------------------------------------------------
@@ -95,11 +98,25 @@ inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
   \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
+" -------
+" Autocommand
+" -------
+if has ("autocmd")
+  filetype plugin indent on
+  autocmd FileType text setlocal textwidth=78
+endif
+
 " ------
 " TagList
 " -------
 let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
 
+" -------
+" Ruby debugger
+" -------
+let g:ruby_debugger_progname = 'mvim'
+
 " Source settings.vim
 exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/settings.vim'
+exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/grb.vim'
 
