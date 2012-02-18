@@ -1,0 +1,24 @@
+[submodule "/Users/abrausch/.vim/bundle/cocoa.vim"]
+	path = /Users/abrausch/.vim/bundle/cocoa.vim
+	url = https://github.com/msanders/cocoa.vim.git
+[submodule "/Users/abrausch/.vim/bundle/csv.vim"]
+	path = /Users/abrausch/.vim/bundle/csv.vim
+	url = https://github.com/vim-scripts/csv.vim.git
+[submodule "/Users/abrausch/.vim/bundle/ctrlp.vim"]
+	path = /Users/abrausch/.vim/bundle/ctrlp.vim
+	url = https://github.com/kien/ctrlp.vim.git
+[submodule "/Users/abrausch/.vim/bundle/nerdtree"]
+	path = /Users/abrausch/.vim/bundle/nerdtree
+	url = https://github.com/scrooloose/nerdtree.git
+[submodule "/Users/abrausch/.vim/bundle/vim-rails"]
+	path = /Users/abrausch/.vim/bundle/vim-rails
+	url = https://github.com/tpope/vim-rails.git
+[submodule "/Users/abrausch/.vim/bundle/vim-rspec"]
+	path = /Users/abrausch/.vim/bundle/vim-rspec
+	url = https://github.com/skwp/vim-rspec.git
+[submodule "/Users/abrausch/.vim/bundle/vim-ruby"]
+	path = /Users/abrausch/.vim/bundle/vim-ruby
+	url = https://github.com/vim-ruby/vim-ruby.git
+[submodule "/Users/abrausch/.vim/bundle/vim-ruby-debugger"]
+	path = /Users/abrausch/.vim/bundle/vim-ruby-debugger
+	url = git://github.com/astashov/vim-ruby-debugger.git

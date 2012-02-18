@@ -1,0 +1,19 @@
+#!/usr/bin/env ruby
+
+git_bundles = [
+  "https://github.com/msanders/cocoa.vim.git",
+  "https://github.com/vim-scripts/csv.vim.git",
+  "https://github.com/kien/ctrlp.vim.git",
+  "https://github.com/scrooloose/nerdtree.git",
+  "https://github.com/tpope/vim-rails.git",
+  "https://github.com/skwp/vim-rspec.git",
+  "https://github.com/vim-ruby/vim-ruby.git",
+  "git://github.com/astashov/vim-ruby-debugger.git",
+]
+
+git_bundles.each do |bundle| 
+  dir = bundle.split('/').last.sub(/\.git$/,'')
+  p "Adding #{bundle} to #{dir}"
+  `git submodule add #{bundle} ~/.vim/bundle/#{dir}`
+end
+
