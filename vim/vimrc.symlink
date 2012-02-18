@@ -42,7 +42,6 @@ inoremap <Up> <C-o>gk
 
 nnoremap <F8> :!/usr/local/bin/ctags -R  **/*.py<CR>
 nnoremap <F4> :TlistToggle<CR>
-nnoremap <C-f><C-f> :FufFile<CR>
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
 map <leader>e :edit %%
