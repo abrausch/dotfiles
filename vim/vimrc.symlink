@@ -109,7 +109,7 @@ endif
 " TagList
 " -------
 let tlist_objc_settings    = 'objc;i:interface;c:class;m:method;p:property'
-
+let Tlist_Use_Right_Window   = 1
 " -------
 " Ruby debugger
 " -------
