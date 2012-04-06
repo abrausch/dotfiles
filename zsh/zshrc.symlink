@@ -15,8 +15,9 @@ then
 fi
 
 # initialize autocomplete here, otherwise functions won't be loaded
+echo "eins"
 autoload -U compinit
-compinit
+compinit -d ~/.compinit-d
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
@@ -26,8 +27,10 @@ eval "$(rbenv init -)"
 setopt promptsubst
 
 # Load the prompt theme system
+echo "zwei"
 autoload -U promptinit
 promptinit
 
 # Use the wunjo prompt theme
+echo "drei"
 prompt grb

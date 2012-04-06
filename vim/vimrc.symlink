@@ -84,7 +84,7 @@ set cursorline
 function! StripWhitespace ()
     exec ':%s/ \+$//gc'
 endfunction
-map ,s :call StripWhitespace ()<CR>
+map ,w :call StripWhitespace ()<CR>
 
 " ---------------------------------------------------------------------------
 " Omni complete
@@ -119,3 +119,6 @@ let g:ruby_debugger_progname = 'mvim'
 exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/settings.vim'
 exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/grb.vim'
 
+"let g:solarized_termcolors=256
+"set background=dark
+"colorscheme solarized
