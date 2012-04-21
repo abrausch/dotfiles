@@ -40,7 +40,7 @@ vnoremap <Up> gk
 inoremap <Down> <C-o>gj
 inoremap <Up> <C-o>gk
 
-nnoremap <F8> :!/usr/local/bin/ctags -R  **/*.py<CR>
+nnoremap <F5> :!/usr/local/bin/ctags -R */** <CR>
 nnoremap <F4> :TlistToggle<CR>
 
 cnoremap %% <C-R>=expand('%:h').'/'<cr>
@@ -103,6 +103,7 @@ inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
 if has ("autocmd")
   filetype plugin indent on
   autocmd FileType text setlocal textwidth=78
+  au FileType xml exe ":silent 1,$!XMLLINT_INDENT='    ' xmllint --format --recover - 2>/dev/null"
 endif
 
 " ------
@@ -119,6 +120,4 @@ let g:ruby_debugger_progname = 'mvim'
 exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/settings.vim'
 exe 'source ~/.dotfiles/vim/vim.symlink/bundle/abrausch/before/plugin/grb.vim'
 
-"let g:solarized_termcolors=256
-"set background=dark
-"colorscheme solarized
+colorscheme desert256
