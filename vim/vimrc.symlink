@@ -2,8 +2,31 @@ set noswapfile
 
 
 " ----------------------------------------------------------------------------
-" Pathogen settings 
+" vundler settings 
 " ----------------------------------------------------------------------------
+set nocompatible               " be iMproved
+filetype off                   " required!
+
+set rtp+=~/.vim/bundle/vundle/
+call vundle#rc()
+
+" let Vundle manage Vundle
+" required! 
+Bundle 'gmarik/vundle'
+ 
+" My Bundles here:
+"
+" original repos on github
+Bundle 'msanders/snipmate.vim'
+Bundle 'tpope/vim-cucumber'
+Bundle 'tpope/vim-fugitive'
+Bundle 'msanders/cocoa.vim'
+Bundle 'vim-scripts/csv.vim'
+Bundle 'kien/ctrlp.vim'
+Bundle 'tpope/vim-rails'
+Bundle 'skwp/vim-rspec'
+Bundle 'vim-ruby/vim-ruby'
+Bundle 'astashov/vim-ruby-debugger'
 
 " ----------------------------------------------------------------------------
 "  Text Formatting

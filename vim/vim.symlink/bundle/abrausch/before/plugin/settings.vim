@@ -2,7 +2,6 @@
 "" Basic Setup
 ""
 
-set nocompatible      " Use vim, no vi defaults
 set number            " Show line numbers
 set ruler             " Show line and column number
 syntax enable         " Turn on syntax highlighting allowing local overrides
