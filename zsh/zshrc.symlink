@@ -17,7 +17,7 @@ fi
 # initialize autocomplete here, otherwise functions won't be loaded
 echo "eins"
 autoload -U compinit
-compinit -d ~/.compinit-d
+compinit 
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
