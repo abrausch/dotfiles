@@ -132,6 +132,9 @@ if has ("autocmd")
   filetype plugin indent on
   autocmd FileType text setlocal textwidth=78
   au FileType xml exe ":silent 1,$!XMLLINT_INDENT='    ' xmllint --format --recover - 2>/dev/null"
+
+  " Remove trailing whitespaces at save
+  autocmd BufWritePre * :%s/\s\+$//e
 endif
 
 " ------
