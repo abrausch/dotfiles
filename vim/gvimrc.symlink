@@ -1,4 +1,6 @@
-colorscheme desert256
+colorscheme codeschool
+set guifont=Monaco:h12
+
 set background=dark
 set anti
 set lines=70 columns=180

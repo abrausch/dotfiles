@@ -2,7 +2,7 @@ set noswapfile
 
 
 " ----------------------------------------------------------------------------
-" vundler settings 
+" vundler settings
 " ----------------------------------------------------------------------------
 set nocompatible               " be iMproved
 filetype off                   " required!
@@ -11,9 +11,9 @@ set rtp+=~/.vim/bundle/vundle/
 call vundle#rc()
 
 " let Vundle manage Vundle
-" required! 
+" required!
 Bundle 'gmarik/vundle'
- 
+
 " My Bundles here:
 "
 " original repos on github
@@ -29,6 +29,7 @@ Bundle 'vim-ruby/vim-ruby'
 Bundle 'astashov/vim-ruby-debugger'
 Bundle 'nanki/treetop.vim'
 Bundle 'jnurmine/Zenburn'
+Bundle 'jpalardy/vim-slime'
 
 " vim-scripts repos
 Bundle 'taglist.vim'
@@ -51,6 +52,12 @@ let mapleader = ","
 " exit to normal mode with 'jj'
 inoremap jj <ESC>
 
+" Insert a hash rocket with <c-l>
+imap <c-l> <space>=><space>
+" Can't be bothered to understand ESC vs <c-c> in insert mode
+imap <c-c> <esc>
+" Clear the search buffer when hitting return
+:nnoremap <CR> :nohlsearch<cr>
 
 " reflow paragraph with Q in normal and visual mode
 nnoremap Q gqap
@@ -105,12 +112,28 @@ set visualbell             " shut the fuck up
 set statusline=%F%m%r%h%w\ [FORMAT=%{&ff}]\ [TYPE=%Y]\ [ASCII=\%03.3b]\ [HEX=\%02.2B]\ [POS=%04l,%04v][%p%%]\ [LEN=%L]
 set cursorline
 
+""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+" MULTIPURPOSE TAB KEY
+" " Indent if we're at the beginning of a line. Else, do completion.
+" """"""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""""
+function! InsertTabWrapper()
+  let col = col('.') - 1
+  if !col || getline('.')[col - 1] !~ '\k'
+    return "\<tab>"
+  else
+    return "\<c-p>"
+  endif
+endfunction
+imap <tab> <c-r>=InsertTabWrapper()<cr>
+imap <M-space> <c-n>
+
+
 " ---------------------------------------------------------------------------
 "  Strip all trailing whitespace in file
 " ---------------------------------------------------------------------------
 
 function! StripWhitespace ()
-    exec ':%s/ \+$//gc'
+  exec ':%s/ \+$//gc'
 endfunction
 map ,w :call StripWhitespace ()<CR>
 
@@ -121,9 +144,9 @@ set ofu=syntaxcomplete#Complete
 set completeopt=longest,menuone
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-  \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-  \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " -------
 " Autocommand
@@ -135,6 +158,8 @@ if has ("autocmd")
 
   " Remove trailing whitespaces at save
   autocmd BufWritePre * :%s/\s\+$//e
+
+  autocmd FileType python,objc set sw=4 sts=4 et
 endif
 
 " ------
@@ -151,4 +176,7 @@ let g:ruby_debugger_progname = 'mvim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/settings.vim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/grb.vim'
 
-colorscheme desert256
+colorscheme codeschool
+
+" Slime settings
+let g:slime_target = "tmux"
