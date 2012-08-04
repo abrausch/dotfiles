@@ -30,6 +30,7 @@ Bundle 'astashov/vim-ruby-debugger'
 Bundle 'nanki/treetop.vim'
 Bundle 'jnurmine/Zenburn'
 Bundle 'jpalardy/vim-slime'
+Bundle 'hallison/vim-markdown'
 
 " vim-scripts repos
 Bundle 'taglist.vim'

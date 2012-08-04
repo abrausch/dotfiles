@@ -17,7 +17,7 @@ fi
 # initialize autocomplete here, otherwise functions won't be loaded
 echo "eins"
 autoload -U compinit
-compinit 
+compinit
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
@@ -34,3 +34,6 @@ promptinit
 # Use the wunjo prompt theme
 echo "drei"
 prompt grb
+
+# Load zsh completion
+fpath=(/usr/local/share/zsh-completions $fpath)
