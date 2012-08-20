@@ -32,6 +32,7 @@ Bundle 'jpalardy/vim-slime'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
 Bundle 'ervandew/supertab'
+Bundle 'hallison/vim-markdown'
 
 " vim-scripts repos
 Bundle 'taglist.vim'
