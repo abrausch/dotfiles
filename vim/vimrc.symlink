@@ -17,7 +17,6 @@ Bundle 'gmarik/vundle'
 " My Bundles here:
 "
 " original repos on github
-Bundle 'msanders/snipmate.vim'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-fugitive'
 Bundle 'msanders/cocoa.vim'
@@ -30,6 +29,9 @@ Bundle 'astashov/vim-ruby-debugger'
 Bundle 'nanki/treetop.vim'
 Bundle 'jnurmine/Zenburn'
 Bundle 'jpalardy/vim-slime'
+Bundle 'scrooloose/syntastic'
+Bundle 'majutsushi/tagbar'
+Bundle 'ervandew/supertab'
 
 " vim-scripts repos
 Bundle 'taglist.vim'
@@ -124,8 +126,10 @@ function! InsertTabWrapper()
     return "\<c-p>"
   endif
 endfunction
-imap <tab> <c-r>=InsertTabWrapper()<cr>
-imap <M-space> <c-n>
+
+" Removed because of supertab
+"imap <tab> <c-r>=InsertTabWrapper()<cr>
+"imap <M-space> <c-n>
 
 
 " ---------------------------------------------------------------------------
@@ -139,14 +143,15 @@ map ,w :call StripWhitespace ()<CR>
 
 " ---------------------------------------------------------------------------
 " Omni complete
+" Removed because of supertab
 " ---------------------------------------------------------------------------
-set ofu=syntaxcomplete#Complete
-set completeopt=longest,menuone
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"set ofu=syntaxcomplete#Complete
+"set completeopt=longest,menuone
+"inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
+"inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
+"      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
+"inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
+"      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
 
 " -------
 " Autocommand
