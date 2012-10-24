@@ -1,16 +1,11 @@
 colorscheme codeschool
 color codeschool
-set guifont=Monaco:h12
+set guifont="Source Code Pro:h13"
 
 set background=dark
 set anti
 set lines=70 columns=180
 set guioptions=egmrt
-
-" Command + t to :CommandT
-if has("gui_macvim")
-  macmenu &File.New\ Tab key=<nop>
-endif
 
 
 " C-TAB and C-SHIFT-TAB cycle tabs forward and backward
