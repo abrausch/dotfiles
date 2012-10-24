@@ -18,7 +18,6 @@ then
 fi
 
 # initialize autocomplete here, otherwise functions won't be loaded
-echo "eins"
 autoload -U compinit
 compinit
 
@@ -30,13 +29,14 @@ eval "$(rbenv init -)"
 setopt promptsubst
 
 # Load the prompt theme system
-echo "zwei"
 autoload -U promptinit
 promptinit
-
-# Use the wunjo prompt theme
-echo "drei"
-prompt grb
+prompt abr
 
 # Load zsh completion
 fpath=(/usr/local/share/zsh-completions $fpath)
+
+# ls colors
+autoload colors; colors;
+export LSCOLORS="Gxfxcxdxbxegedabagacad"
+
