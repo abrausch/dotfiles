@@ -210,3 +210,9 @@ let g:slime_target = "tmux"
 
 "RubyDoc settings
 let g:ruby_doc_command='open'
+
+"Code folding
+set foldmethod=indent
+set foldnestmax=10
+set nofoldenable
+set foldlevel=1
