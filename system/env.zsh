@@ -1,1 +1,1 @@
-#export EDITOR='mate -lW'
+export EDITOR='vim'
