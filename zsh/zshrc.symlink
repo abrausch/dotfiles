@@ -41,7 +41,7 @@ autoload colors; colors;
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # Mysql loading fix for rails
-export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
+# export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
 eval "$(/Users/abrausch/Projekte/ruby/cw/bin/cw init -)"
 
