@@ -21,7 +21,10 @@ Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rbenv'
+Bundle 'tpope/vim-rake'
+Bundle 'tpope/vim-bundler'
 
+Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'lucapette/vim-ruby-doc'
@@ -36,9 +39,7 @@ Bundle 'jnurmine/Zenburn'
 Bundle 'jpalardy/vim-slime'
 Bundle 'scrooloose/syntastic'
 Bundle 'majutsushi/tagbar'
-Bundle 'ervandew/supertab'
 Bundle 'hallison/vim-markdown'
-Bundle 'Rip-Rip/clang_complete'
 Bundle 'scrooloose/nerdtree'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'Raimondi/delimitMate'
@@ -186,6 +187,11 @@ if has ("autocmd")
   autocmd FileType python,objc set sw=4 sts=4 et
 endif
 
+"--------------
+" CTRLP
+"-------------
+let g:ctrlp_buftag_types = {'objc': '--language-force=objc --objc-types=mpci'}
+map <leader>6 :CtrlPBufTag<CR>
 
 " -------
 "  Tagbar
@@ -229,24 +235,6 @@ let g:tagbar_type_objc = {
 " Ruby debugger
 " -------
 let g:ruby_debugger_progname = 'mvim'
-
-" -------
-" clang_complete
-" -------
-" Complete options (disable preview scratch window)
-"set completeopt=longest,menuone
-
-" Limit popup menu height
-set pumheight=15
-
-" SuperTab option for context aware completion
-let g:SuperTabDefaultCompletionType = "context"
-
-" Disable auto popup, use <Tab> to autocomplete
-let g:clang_complete_auto = 0
-
-" Show clang errors in the quickfix window
-let g:clang_complete_copen = 1
 
 " Source settings.vim
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/settings.vim'
