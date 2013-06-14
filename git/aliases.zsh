@@ -11,3 +11,4 @@ alias gb='git branch'
 alias gst='git status -sb' # upgrade your git if -sb breaks for you. it's fun.
 alias grm="git status | grep deleted | awk '{print \$3}' | xargs git rm"
 alias rtwc="git status --porcelain | cut -c 2- | grep -E \"^[^D]\" | cut -c 3- | grep -E '*\.[hm]$'  | xargs -I {} gsed -i 's/[ \t]*$//' {}"
+alias amend="git commit --amend"

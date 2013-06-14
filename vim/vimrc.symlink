@@ -23,6 +23,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rbenv'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
+Bundle 'tpope/vim-surround'
 
 Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-ruby/vim-ruby'
@@ -44,6 +45,8 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter.git'
+Bundle 'msanders/snipmate.vim'
+Bundle 'elixir-lang/vim-elixir'
 
 " vim-scripts repos
 Bundle 'matchit.zip'
@@ -185,6 +188,8 @@ if has ("autocmd")
   autocmd BufWritePre * :%s/\s\+$//e
 
   autocmd FileType python,objc set sw=4 sts=4 et
+
+  au BufRead,BufNewFile *.wiki set filetype=tracwiki
 endif
 
 "--------------

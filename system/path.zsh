@@ -6,5 +6,6 @@ export PATH=$PATH:~/local/bin:/usr/local/sbin
 export JAVA_HOME=/System/Library/Frameworks/JavaVM.framework/Versions/1.6/Home
 export SCALA_HOME=/usr/local/scala/
 export PATH=$PATH:/Applications/Inkscape.app/Contents/Resources/bin
+export PATH=/Users/abrausch/Projekte/DirtyLittleHelper:$PATH
 
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
