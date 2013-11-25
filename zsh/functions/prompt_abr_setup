@@ -83,7 +83,7 @@ function prompt_abr_scm_info() {
 }
 
 function ruby_info {
-  rbenv version-name
+  ruby --version
 }
 
 prompt_abr_setup() {
@@ -172,7 +172,7 @@ prompt_abr_setup() {
 	PROMPT+=":$pc[shortpath]%1~$pc[reset]"
 	PROMPT+="\$(prompt_abr_scm_info)"
 	PROMPT+=" $pc[#]\$$pc[reset] "
-  RPROMPT='%{$fg[cyan]%}($(ruby_info))%{$reset_color%}% :[%T]'
+  RPROMPT='%{$fg[cyan]%}()%{$reset_color%}% :[%T]'
 
 	export PROMPT RPROMPT
 	precmd_functions+='prompt_wunjo_precmd'

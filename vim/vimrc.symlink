@@ -20,12 +20,10 @@ Bundle 'gmarik/vundle'
 Bundle 'tpope/vim-cucumber'
 Bundle 'tpope/vim-fugitive'
 Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rbenv'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-surround'
 
-Bundle 'Valloric/YouCompleteMe'
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
 Bundle 'lucapette/vim-ruby-doc'
@@ -170,7 +168,7 @@ map ,w :call StripWhitespace ()<CR>
 " Removed because of supertab
 " ---------------------------------------------------------------------------
 "set ofu=syntaxcomplete#Complete
-"set completeopt=longest,menuone
+set completeopt=menu,preview
 inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
 "inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
 "      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
@@ -297,6 +295,8 @@ vmap <silent> <S-F12> ms:call RemoveRubyEval()<CR>
 nmap <silent> <S-F12> V<S-F12>
 imap <silent> <S-F12> <ESC><S-F12>a
 
+let g:rct_completion_use_fri = 0
+let g:RCT_ri_cmd = "ri -T -f plain "
 
 function! RemoveRubyEval() range
   let begv = a:firstline
