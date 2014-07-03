@@ -41,11 +41,14 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 # Mysql loading fix for rails
 # export DYLD_LIBRARY_PATH=/usr/local/mysql/lib:$DYLD_LIBRARY_PATH
 
-eval "$(/Users/abrausch/Projekte/ruby/cw/bin/cw init -)"
-
 # tmuxinator configuration
 [[ -s $HOME/.tmuxinator/scripts/tmuxinator ]] && source $HOME/.tmuxinator/scripts/tmuxinator
 
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.0.0
+chruby 2.1.2
+
+# antigen
+antigen bundle zsh-users/zsh-syntax-highlighting
+antigen apply
+

@@ -23,6 +23,7 @@ Bundle 'tpope/vim-rails'
 Bundle 'tpope/vim-rake'
 Bundle 'tpope/vim-bundler'
 Bundle 'tpope/vim-surround'
+Bundle 'tpope/vim-fireplace'
 
 Bundle 'vim-ruby/vim-ruby'
 Bundle 'ecomba/vim-ruby-refactoring'
@@ -43,8 +44,11 @@ Bundle 'scrooloose/nerdtree'
 Bundle 'derekwyatt/vim-fswitch'
 Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter.git'
-Bundle 'msanders/snipmate.vim'
 Bundle 'elixir-lang/vim-elixir'
+Bundle 'jnwhiteh/vim-golang'
+
+Bundle 'SirVer/ultisnips'
+Bundle 'Rip-Rip/clang_complete'
 
 " vim-scripts repos
 Bundle 'matchit.zip'
@@ -309,3 +313,18 @@ function! RemoveRubyEval() range
   redraw
 endfunction
 
+" clang_complete settings
+let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"
+let g:clang_auto_user_options="compile_commands.json, path, .clang_complete"
+let g:clang_complete_auto = 1
+let g:clang_periodic_quickfix = 0
+let g:clang_close_preview = 1
+" For Objective-C, this needs to be active, otherwise multi-parameter methods won't be completed correctly
+let g:clang_snippets = 1
+let g:clang_auto_select = 1
+" Snipmate does not work anymore, ultisnips is the recommended plugin
+let g:clang_snippets_engine = 'ultisnips'
+" show diagnostics
+nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
+let g:clang_complete_copen = 1
+nnoremap <leader>c :cc<cr>
