@@ -10,5 +10,4 @@ export PATH=/Users/abrausch/Projekte/DirtyLittleHelper:$PATH
 export PATH=$PATH:~/bin/oclint-0.7/bin
 export PATH=$HOME/.cask/bin:$PATH
 export PATH=$PATH:~/bin/oclint/bin
-export PATH=$HOME/.homebrew/homebrew/bin:$PATH
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
