@@ -2,6 +2,7 @@ update
 
 tap caskroom/cask
 tap homebrew/dupes
+tap peco/peco
 
 install ack
 install archey
@@ -87,3 +88,4 @@ install xz
 install yajl
 install zsh
 install zsh-completions
+install peco
