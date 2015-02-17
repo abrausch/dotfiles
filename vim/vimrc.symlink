@@ -46,6 +46,7 @@ Bundle 'Raimondi/delimitMate'
 Bundle 'airblade/vim-gitgutter.git'
 Bundle 'elixir-lang/vim-elixir'
 Bundle 'jnwhiteh/vim-golang'
+Bundle 'rizzatti/dash.vim'
 
 Bundle 'SirVer/ultisnips'
 Bundle 'Rip-Rip/clang_complete'
@@ -318,9 +319,11 @@ let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/
 let g:clang_auto_user_options="compile_commands.json, path, .clang_complete"
 
 let g:clang_complete_auto = 1
+let g:clang_use_library = 1
 let g:clang_periodic_quickfix = 0
 let g:clang_close_preview = 1
 let g:clang_debug = 1
+
 " For Objective-C, this needs to be active, otherwise multi-parameter methods won't be completed correctly
 let g:clang_snippets = 1
 let g:clang_auto_select = 1

@@ -1,0 +1,906 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    CFPropertyList (2.2.8)
+    RubyInline (3.12.3)
+      ZenTest (~> 4.3)
+    ZenTest (4.11.0)
+    ace-rails-ap (3.0.2)
+    actionmailer (4.2.0)
+      actionpack (= 4.2.0)
+      actionview (= 4.2.0)
+      activejob (= 4.2.0)
+      mail (~> 2.5, >= 2.5.4)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+    actionpack (4.2.0)
+      actionview (= 4.2.0)
+      activesupport (= 4.2.0)
+      rack (~> 1.6.0)
+      rack-test (~> 0.6.2)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    actionview (4.2.0)
+      activesupport (= 4.2.0)
+      builder (~> 3.1)
+      erubis (~> 2.7.0)
+      rails-dom-testing (~> 1.0, >= 1.0.5)
+      rails-html-sanitizer (~> 1.0, >= 1.0.1)
+    activejob (4.2.0)
+      activesupport (= 4.2.0)
+      globalid (>= 0.3.0)
+    activemodel (4.2.0)
+      activesupport (= 4.2.0)
+      builder (~> 3.1)
+    activerecord (4.2.0)
+      activemodel (= 4.2.0)
+      activesupport (= 4.2.0)
+      arel (~> 6.0)
+    activeresource (4.0.0)
+      activemodel (~> 4.0)
+      activesupport (~> 4.0)
+      rails-observers (~> 0.1.1)
+    activesupport (4.2.0)
+      i18n (~> 0.7)
+      json (~> 1.7, >= 1.7.7)
+      minitest (~> 5.1)
+      thread_safe (~> 0.3, >= 0.3.4)
+      tzinfo (~> 1.1)
+    acts-as-taggable-on (3.4.2)
+      activerecord (>= 3.2, < 5)
+    addressable (2.3.6)
+    ae (1.8.2)
+      ansi
+    amq-protocol (1.9.2)
+    ansi (1.4.3)
+    arel (6.0.0)
+    ast (2.0.0)
+    astrolabe (1.3.0)
+      parser (>= 2.2.0.pre.3, < 3.0)
+    awesome_print (1.6.0)
+    aws-sdk (1.60.2)
+      aws-sdk-v1 (= 1.60.2)
+    aws-sdk-v1 (1.60.2)
+      json (~> 1.4)
+      nokogiri (>= 1.4.4)
+    bcrypt (3.1.9)
+    bcrypt-ruby (3.1.5)
+      bcrypt (>= 3.1.3)
+    berkshelf (3.2.2)
+      addressable (~> 2.3.4)
+      berkshelf-api-client (~> 1.2)
+      buff-config (~> 1.0)
+      buff-extensions (~> 1.0)
+      buff-shell_out (~> 0.1)
+      celluloid (~> 0.16.0)
+      celluloid-io (~> 0.16.1)
+      cleanroom (~> 1.0)
+      faraday (~> 0.9.0)
+      minitar (~> 0.5.4)
+      octokit (~> 3.0)
+      retryable (~> 1.3.3)
+      ridley (~> 4.0)
+      solve (~> 1.1)
+      thor (~> 0.19)
+    berkshelf-api-client (1.2.0)
+      faraday (~> 0.9.0)
+    bert (1.1.6)
+    bigdecimal (1.2.6)
+    bootstrap-sass (3.3.1.0)
+      sass (~> 3.2)
+    bourne (1.6.0)
+      mocha (~> 1.1)
+    brass (1.2.1)
+    buff-config (1.0.1)
+      buff-extensions (~> 1.0)
+      varia_model (~> 0.4)
+    buff-extensions (1.0.0)
+    buff-ignore (1.1.1)
+    buff-ruby_engine (0.1.0)
+    buff-shell_out (0.2.0)
+      buff-ruby_engine (~> 0.1.0)
+    builder (3.2.2)
+    bunny (1.6.3)
+      amq-protocol (>= 1.9.2)
+    celluloid (0.16.0)
+      timers (~> 4.0.0)
+    celluloid-io (0.16.1)
+      celluloid (>= 0.16.0)
+      nio4r (>= 1.0.0)
+    chef (0.8.10)
+      bunny (>= 0.6.0)
+      erubis
+      extlib
+      json
+      mixlib-authentication (>= 1.1.0)
+      mixlib-cli (>= 1.1.0)
+      mixlib-config (>= 1.1.0)
+      mixlib-log (>= 1.1.0)
+      moneta
+      ohai (>= 0.5.0)
+    chef-rewind (0.0.9)
+    chef-zero (3.2.1)
+      ffi-yajl (~> 1.1)
+      hashie (~> 2.0)
+      mixlib-log (~> 1.3)
+      rack
+      uuidtools (~> 2.1)
+    chronic (0.10.2)
+    chunky_png (1.3.3)
+    claide (0.8.0)
+    cleanroom (1.0.0)
+    cocoapods (0.2.0)
+    cocoapods-core (0.35.0)
+      activesupport (>= 3.2.15)
+      fuzzy_match (~> 2.0.4)
+      nap (~> 0.8.0)
+    cocoapods-downloader (0.8.1)
+    cocoapods-packager (1.1.0)
+    cocoapods-plugins (0.4.0)
+      nap
+    cocoapods-trunk (0.5.0)
+      nap (>= 0.8)
+      netrc (= 0.7.8)
+    cocoapods-try (0.4.3)
+    coderay (1.1.0)
+    coffee-rails (4.1.0)
+      coffee-script (>= 2.2.0)
+      railties (>= 4.0.0, < 5.0)
+    coffee-script (2.3.0)
+      coffee-script-source
+      execjs
+    coffee-script-source (1.8.0)
+    colored (1.2)
+    colorize (0.7.5)
+    commander (4.2.1)
+      highline (~> 1.6.11)
+    compass (1.0.1)
+      chunky_png (~> 1.2)
+      compass-core (~> 1.0.1)
+      compass-import-once (~> 1.0.5)
+      rb-fsevent (>= 0.9.3)
+      rb-inotify (>= 0.9)
+      sass (>= 3.3.13, < 3.5)
+    compass-core (1.0.1)
+      multi_json (~> 1.0)
+      sass (>= 3.3.0, < 3.5)
+    compass-import-once (1.0.5)
+      sass (>= 3.2, < 3.5)
+    compass-rails (2.0.1)
+      compass (~> 1.0.0)
+    corefoundation (0.1.4)
+      ffi
+    coveralls (0.7.1)
+      multi_json (~> 1.3)
+      rest-client
+      simplecov (>= 0.7)
+      term-ansicolor
+      thor
+    daemons (1.1.9)
+    data_mapper (1.2.0)
+      dm-aggregates (~> 1.2.0)
+      dm-constraints (~> 1.2.0)
+      dm-core (~> 1.2.0)
+      dm-migrations (~> 1.2.0)
+      dm-serializer (~> 1.2.0)
+      dm-timestamps (~> 1.2.0)
+      dm-transactions (~> 1.2.0)
+      dm-types (~> 1.2.0)
+      dm-validations (~> 1.2.0)
+    data_objects (0.10.14)
+      addressable (~> 2.1)
+    dep-selector-libgecode (1.0.2)
+    dep_selector (1.0.3)
+      dep-selector-libgecode (~> 1.0)
+      ffi (~> 1.9)
+    diff-lcs (1.2.5)
+    dm-aggregates (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-constraints (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-core (1.2.1)
+      addressable (~> 2.3)
+    dm-do-adapter (1.2.0)
+      data_objects (~> 0.10.6)
+      dm-core (~> 1.2.0)
+    dm-migrations (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-mysql-adapter (1.2.0)
+      dm-do-adapter (~> 1.2.0)
+      do_mysql (~> 0.10.6)
+    dm-serializer (1.2.2)
+      dm-core (~> 1.2.0)
+      fastercsv (~> 1.5)
+      json (~> 1.6)
+      json_pure (~> 1.6)
+      multi_json (~> 1.0)
+    dm-timestamps (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-transactions (1.2.0)
+      dm-core (~> 1.2.0)
+    dm-types (1.2.2)
+      bcrypt-ruby (~> 3.0)
+      dm-core (~> 1.2.0)
+      fastercsv (~> 1.5)
+      json (~> 1.6)
+      multi_json (~> 1.0)
+      stringex (~> 1.4)
+      uuidtools (~> 2.1)
+    dm-validations (1.2.0)
+      dm-core (~> 1.2.0)
+    do_mysql (0.10.14)
+      data_objects (= 0.10.14)
+    docile (1.1.5)
+    domain_name (0.5.23)
+      unf (>= 0.0.5, < 1.0.0)
+    equivalent-xml (0.5.1)
+      nokogiri (>= 1.4.3)
+    erubis (2.7.0)
+    escape (0.0.4)
+    ethon (0.7.1)
+      ffi (>= 1.3.0)
+    eventful (1.0.1)
+      methodphitamine (= 1.0.0)
+    eventmachine (1.0.4)
+    execjs (2.2.2)
+    extlib (0.9.16)
+    facets (3.0.0)
+    factory_girl (4.5.0)
+      activesupport (>= 3.0.0)
+    factory_girl_rails (4.5.0)
+      factory_girl (~> 4.5.0)
+      railties (>= 3.0.0)
+    faker (1.4.3)
+      i18n (~> 0.5)
+    faraday (0.9.0)
+      multipart-post (>= 1.2, < 3)
+    fastercsv (1.5.5)
+    ffi (1.9.6)
+    ffi-yajl (1.3.1)
+      ffi (~> 1.5)
+      libyajl2 (~> 1.2)
+    file-tail (1.1.0)
+      tins (~> 1.0)
+    flay (2.5.0)
+      ruby_parser (~> 3.0)
+      sexp_processor (~> 4.0)
+    flog (4.3.0)
+      ruby_parser (~> 3.1, > 3.1.0)
+      sexp_processor (~> 4.4)
+    foodcritic (4.0.0)
+      erubis
+      gherkin (~> 2.11)
+      nokogiri (~> 1.5)
+      rake
+      rufus-lru (~> 1.0)
+      treetop (~> 1.4)
+      yajl-ruby (~> 1.1)
+    fssm (0.2.10)
+    fuzzy_match (2.0.4)
+    gem-open (0.1.7)
+    gherkin (2.12.2)
+      multi_json (~> 1.3)
+    globalid (0.3.0)
+      activesupport (>= 4.1.0)
+    grit (2.5.0)
+      diff-lcs (~> 1.1)
+      mime-types (~> 1.15)
+      posix-spawn (~> 0.3.6)
+    haml (4.0.6)
+      tilt
+    hashie (2.1.2)
+    highline (1.6.21)
+    hike (1.2.3)
+    hitimes (1.2.2)
+    hoe (3.13.0)
+      rake (>= 0.8, < 11.0)
+    hpricot (0.8.6)
+    http-cookie (1.0.2)
+      domain_name (~> 0.5)
+    httparty (0.13.3)
+      json (~> 1.8)
+      multi_xml (>= 0.5.2)
+    i18n (0.7.0)
+    io-console (0.4.3)
+    ipaddress (0.8.0)
+    journey (1.0.4)
+    jquery-rails (4.0.3)
+      rails-dom-testing (~> 1.0)
+      railties (>= 4.2.0)
+      thor (>= 0.14, < 2.0)
+    json (1.8.1)
+    json_pure (1.8.1)
+    kgio (2.9.2)
+    kitchen-vagrant (0.15.0)
+      test-kitchen (~> 1.0)
+    libyajl2 (1.2.0)
+    log4r (1.1.10)
+    loofah (2.0.1)
+      nokogiri (>= 1.5.9)
+    mail (2.6.3)
+      mime-types (>= 1.16, < 3)
+    mechanize (2.7.2)
+      domain_name (~> 0.5, >= 0.5.1)
+      http-cookie (~> 1.0.0)
+      mime-types (~> 1.17, >= 1.17.2)
+      net-http-digest_auth (~> 1.1, >= 1.1.1)
+      net-http-persistent (~> 2.5, >= 2.5.2)
+      nokogiri (~> 1.4)
+      ntlm-http (~> 0.1, >= 0.1.1)
+      webrobots (>= 0.0.9, < 0.2)
+    metaclass (0.0.4)
+    method_source (0.8.2)
+    methodphitamine (1.0.0)
+    mime-types (1.25.1)
+    mini_portile (0.6.1)
+    minitar (0.5.4)
+    minitest (5.5.0)
+    minitest-display (0.3.0)
+      minitest (~> 5.0)
+    mixlib-authentication (1.3.0)
+      mixlib-log
+    mixlib-cli (1.5.0)
+    mixlib-config (2.1.0)
+    mixlib-log (1.6.0)
+    mixlib-shellout (1.6.1)
+    mixml (0.9.5)
+      commander (~> 4.2)
+      docile (~> 1.1)
+      erubis (~> 2.7)
+      nokogiri (~> 1.6)
+    mocha (1.1.0)
+      metaclass (~> 0.0.1)
+    moneta (0.8.0)
+    multi_json (1.10.1)
+    multi_xml (0.5.5)
+    multipart-post (2.0.0)
+    mysql2 (0.3.17)
+    nap (0.8.0)
+    net-http-digest_auth (1.4)
+    net-http-persistent (2.9.4)
+    net-scp (1.2.1)
+      net-ssh (>= 2.6.5)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (2.9.1)
+    net-ssh-gateway (1.2.0)
+      net-ssh (>= 2.6.5)
+    net-ssh-multi (1.2.0)
+      net-ssh (>= 2.6.5)
+      net-ssh-gateway (>= 1.2.0)
+    netrc (0.7.8)
+    nio4r (1.0.1)
+    nokogiri (1.6.5)
+      mini_portile (~> 0.6.0)
+    nokogiri-pretty (0.1.0)
+      nokogiri
+    ntlm-http (0.1.1)
+    oauth (0.4.7)
+    octokit (3.7.0)
+      sawyer (~> 0.6.0, >= 0.5.3)
+    ohai (7.4.0)
+      ffi (~> 1.9)
+      ffi-yajl (~> 1.0)
+      ipaddress
+      mime-types (~> 1.16)
+      mixlib-cli
+      mixlib-config (~> 2.0)
+      mixlib-log
+      mixlib-shellout (~> 1.2)
+      systemu (~> 2.6.4)
+      wmi-lite (~> 1.0)
+    omniauth (1.2.2)
+      hashie (>= 1.2, < 4)
+      rack (~> 1.0)
+    open4 (1.3.4)
+    osx_keychain (1.0.0)
+      RubyInline (~> 3)
+    parser (2.2.0.1)
+      ast (>= 1.1, < 3.0)
+      slop (~> 3.4, >= 3.4.5)
+    pg (0.17.1)
+    plist (3.1.0)
+    polyglot (0.3.5)
+    posix-spawn (0.3.9)
+    power_assert (0.2.2)
+    powerpack (0.0.9)
+    proxylocal (0.3.1)
+      bert (>= 1.1.2)
+      eventmachine (>= 0.12.10)
+    pry (0.10.1)
+      coderay (~> 1.1.0)
+      method_source (~> 0.8.1)
+      slop (~> 3.4)
+    pry-rails (0.3.2)
+      pry (>= 0.9.10)
+    psych (2.0.8)
+    qed (2.9.1)
+      ansi
+      brass
+      facets (>= 2.8)
+    query_result_presenter (0.0.1)
+    rack (1.6.0)
+    rack-cache (1.2)
+      rack (>= 0.4)
+    rack-protection (1.5.3)
+      rack
+    rack-ssl (1.4.1)
+      rack
+    rack-test (0.6.2)
+      rack (>= 1.0)
+    rails (4.2.0)
+      actionmailer (= 4.2.0)
+      actionpack (= 4.2.0)
+      actionview (= 4.2.0)
+      activejob (= 4.2.0)
+      activemodel (= 4.2.0)
+      activerecord (= 4.2.0)
+      activesupport (= 4.2.0)
+      bundler (>= 1.3.0, < 2.0)
+      railties (= 4.2.0)
+      sprockets-rails
+    rails-deprecated_sanitizer (1.0.3)
+      activesupport (>= 4.2.0.alpha)
+    rails-dom-testing (1.0.5)
+      activesupport (>= 4.2.0.beta, < 5.0)
+      nokogiri (~> 1.6.0)
+      rails-deprecated_sanitizer (>= 1.0.1)
+    rails-html-sanitizer (1.0.1)
+      loofah (~> 2.0)
+    rails-observers (0.1.2)
+      activemodel (~> 4.0)
+    railties (4.2.0)
+      actionpack (= 4.2.0)
+      activesupport (= 4.2.0)
+      rake (>= 0.8.7)
+      thor (>= 0.18.1, < 2.0)
+    rainbow (2.0.0)
+    raindrops (0.13.0)
+    rake (10.4.2)
+    rb-fsevent (0.9.4)
+    rb-inotify (0.9.5)
+      ffi (>= 0.5.0)
+    rcodetools (0.8.5.0)
+    rdoc (4.2.0)
+    rest-client (1.7.2)
+      mime-types (>= 1.16, < 3.0)
+      netrc (~> 0.7)
+    retryable (1.3.6)
+    ridley (4.1.1)
+      addressable
+      buff-config (~> 1.0)
+      buff-extensions (~> 1.0)
+      buff-ignore (~> 1.1)
+      buff-shell_out (~> 0.1)
+      celluloid (~> 0.16.0)
+      celluloid-io (~> 0.16.1)
+      erubis
+      faraday (~> 0.9.0)
+      hashie (>= 2.0.2, < 3.0.0)
+      json (>= 1.7.7)
+      mixlib-authentication (>= 1.3.0)
+      net-http-persistent (>= 2.8)
+      retryable
+      semverse (~> 1.1)
+      varia_model (~> 0.4)
+    rspec (3.1.0)
+      rspec-core (~> 3.1.0)
+      rspec-expectations (~> 3.1.0)
+      rspec-mocks (~> 3.1.0)
+    rspec-core (3.1.7)
+      rspec-support (~> 3.1.0)
+    rspec-expectations (3.1.2)
+      diff-lcs (>= 1.2.0, < 2.0)
+      rspec-support (~> 3.1.0)
+    rspec-mocks (3.1.3)
+      rspec-support (~> 3.1.0)
+    rspec-support (3.1.2)
+    rubocop (0.28.0)
+      astrolabe (~> 1.3)
+      parser (>= 2.2.0.pre.7, < 3.0)
+      powerpack (~> 0.0.6)
+      rainbow (>= 1.99.1, < 3.0)
+      ruby-progressbar (~> 1.4)
+    ruby-keychain (0.1.2)
+      corefoundation (~> 0.1.3)
+      ffi
+    ruby-prof (0.15.2)
+    ruby-progressbar (1.7.1)
+    ruby2ruby (2.1.3)
+      ruby_parser (~> 3.1)
+      sexp_processor (~> 4.0)
+    ruby_parser (3.6.3)
+      sexp_processor (~> 4.1)
+    rubygems-update (2.4.5)
+    rubyzip (1.1.6)
+    rufus-lru (1.0.5)
+    safe_yaml (1.0.4)
+    sass (3.4.9)
+    sass-rails (5.0.1)
+      railties (>= 4.0.0, < 5.0)
+      sass (~> 3.1)
+      sprockets (>= 2.8, < 4.0)
+      sprockets-rails (>= 2.0, < 4.0)
+      tilt (~> 1.1)
+    sawyer (0.6.0)
+      addressable (~> 2.3.5)
+      faraday (~> 0.8, < 0.10)
+    semverse (1.2.1)
+    sexp_processor (4.4.4)
+    shoulda (3.5.0)
+      shoulda-context (~> 1.0, >= 1.0.1)
+      shoulda-matchers (>= 1.4.1, < 3.0)
+    shoulda-context (1.2.1)
+    shoulda-matchers (2.7.0)
+      activesupport (>= 3.0.0)
+    simple-tidy (0.1.1)
+    simplecov (0.9.1)
+      docile (~> 1.1.0)
+      multi_json (~> 1.0)
+      simplecov-html (~> 0.8.0)
+    simplecov-html (0.8.0)
+    sinatra (1.4.5)
+      rack (~> 1.4)
+      rack-protection (~> 1.4)
+      tilt (~> 1.3, >= 1.3.4)
+    siren (0.2.0)
+      eventful
+      treetop
+    slop (3.6.0)
+    solve (1.2.1)
+      dep_selector (~> 1.0)
+      semverse (~> 1.1)
+    sourcify (0.5.0)
+      file-tail (>= 1.0.5)
+      ruby2ruby (>= 1.2.5)
+      ruby_parser (>= 2.0.5)
+      sexp_processor (>= 3.0.5)
+    sprockets (2.12.3)
+      hike (~> 1.2)
+      multi_json (~> 1.0)
+      rack (~> 1.0)
+      tilt (~> 1.1, != 1.3.0)
+    sprockets-rails (2.2.2)
+      actionpack (>= 3.0)
+      activesupport (>= 3.0)
+      sprockets (>= 2.8, < 4.0)
+    state_machine (1.1.2)
+    stringex (1.5.1)
+    systemu (2.6.4)
+    term-ansicolor (1.3.0)
+      tins (~> 1.0)
+    terminal-table (1.4.5)
+    test-kitchen (1.2.1)
+      mixlib-shellout (~> 1.2)
+      net-scp (~> 1.1)
+      net-ssh (~> 2.7)
+      safe_yaml (~> 1.0)
+      thor (~> 0.18)
+    test-unit (3.0.8)
+      power_assert
+    textacular (3.2.1)
+      activerecord (>= 3.0, < 5.0)
+    thin (1.6.3)
+      daemons (~> 1.0, >= 1.0.9)
+      eventmachine (~> 1.0)
+      rack (~> 1.0)
+    thor (0.19.1)
+    thread_safe (0.3.4)
+    tilt (1.4.1)
+    timers (4.0.1)
+      hitimes
+    tins (1.3.3)
+    tmbundle-manager (0.1.2)
+      thor
+    treetop (1.5.3)
+      polyglot (~> 0.3)
+    trogdoro-el4r (1.0.10)
+    typhoeus (0.6.9)
+      ethon (>= 0.7.1)
+    tzinfo (1.2.2)
+      thread_safe (~> 0.1)
+    uglifier (2.6.0)
+      execjs (>= 0.3.0)
+      json (>= 1.8.0)
+    unf (0.1.4)
+      unf_ext
+    unf_ext (0.0.6)
+    unicorn (4.8.3)
+      kgio (~> 2.6)
+      rack
+      raindrops (~> 0.7)
+    uuidtools (2.1.5)
+    varia_model (0.4.0)
+      buff-extensions (~> 1.0)
+      hashie (>= 2.0.2, < 3.0.0)
+    webrobots (0.1.1)
+    will_paginate (3.0.7)
+    wmi-lite (1.0.0)
+    xcodebuild-rb (0.3.0)
+      state_machine (~> 1.1.2)
+    xcodeproj (0.21.0)
+      activesupport (>= 3)
+      colored (~> 1.2)
+    xcoder (0.1.18)
+      aws-sdk
+      builder
+      colorize
+      multi_json
+      nokogiri
+      plist
+      rest-client
+    xcpretty (0.1.7)
+    yajl-ruby (1.2.1)
+    yard (0.8.7.6)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  CFPropertyList
+  RubyInline
+  ZenTest
+  ace-rails-ap
+  actionmailer
+  actionpack
+  actionview
+  activemodel
+  activerecord
+  activeresource
+  activesupport
+  acts-as-taggable-on
+  addressable
+  ae
+  ansi
+  arel
+  ast
+  astrolabe
+  awesome_print
+  aws-sdk
+  aws-sdk-v1
+  bcrypt
+  bcrypt-ruby
+  berkshelf
+  berkshelf-api-client
+  bert
+  bigdecimal
+  bootstrap-sass
+  bourne
+  brass
+  buff-config
+  buff-extensions
+  buff-ignore
+  buff-ruby_engine
+  buff-shell_out
+  builder
+  bundler
+  celluloid
+  celluloid-io
+  chef
+  chef-rewind
+  chef-zero
+  chronic
+  chunky_png
+  claide
+  cleanroom
+  cocoapods
+  cocoapods-core
+  cocoapods-downloader
+  cocoapods-packager
+  cocoapods-plugins
+  cocoapods-trunk
+  cocoapods-try
+  coderay
+  coffee-rails
+  coffee-script
+  coffee-script-source
+  colored
+  colorize
+  commander
+  compass
+  compass-core
+  compass-import-once
+  compass-rails
+  corefoundation
+  coveralls
+  daemons
+  data_mapper
+  data_objects
+  dep-selector-libgecode
+  dep_selector
+  diff-lcs
+  dm-aggregates
+  dm-constraints
+  dm-core
+  dm-do-adapter
+  dm-migrations
+  dm-mysql-adapter
+  dm-serializer
+  dm-timestamps
+  dm-transactions
+  dm-types
+  dm-validations
+  do_mysql
+  docile
+  domain_name
+  equivalent-xml
+  erubis
+  escape
+  ethon
+  eventful
+  eventmachine
+  execjs
+  facets
+  factory_girl
+  factory_girl_rails
+  faker
+  faraday
+  fastercsv
+  ffi
+  ffi-yajl
+  file-tail
+  flay
+  flog
+  foodcritic
+  fssm
+  fuzzy_match
+  gem-open
+  gherkin
+  grit
+  haml
+  hashie
+  highline
+  hike
+  hitimes
+  hoe
+  hpricot
+  http-cookie
+  httparty
+  i18n
+  io-console
+  ipaddress
+  journey
+  jquery-rails
+  json
+  json_pure
+  kgio
+  kitchen-vagrant
+  libyajl2
+  log4r
+  mail
+  mechanize
+  metaclass
+  method_source
+  methodphitamine
+  mime-types
+  mini_portile
+  minitar
+  minitest
+  minitest-display
+  mixlib-authentication
+  mixlib-cli
+  mixlib-config
+  mixlib-log
+  mixlib-shellout
+  mixml
+  mocha
+  multi_json
+  multi_xml
+  multipart-post
+  mysql2
+  nap
+  net-http-digest_auth
+  net-http-persistent
+  net-scp
+  net-sftp
+  net-ssh
+  net-ssh-gateway
+  net-ssh-multi
+  netrc
+  nio4r
+  nokogiri
+  nokogiri-pretty
+  ntlm-http
+  oauth
+  octokit
+  ohai
+  omniauth
+  open4
+  osx_keychain
+  parser
+  pg
+  plist
+  polyglot
+  posix-spawn
+  power_assert
+  powerpack
+  proxylocal
+  pry
+  pry-rails
+  psych
+  qed
+  query_result_presenter
+  rack
+  rack-cache
+  rack-protection
+  rack-ssl
+  rack-test
+  rails
+  rails-observers
+  railties
+  rainbow
+  raindrops
+  rake
+  rb-fsevent
+  rb-inotify
+  rcodetools
+  rdoc
+  rest-client
+  retryable
+  ridley
+  rspec
+  rspec-core
+  rspec-expectations
+  rspec-mocks
+  rspec-support
+  rubocop
+  ruby-keychain
+  ruby-prof
+  ruby-progressbar
+  ruby2ruby
+  ruby_parser
+  rubygems-update
+  rubyzip
+  rufus-lru
+  safe_yaml
+  sass
+  sass-rails
+  sawyer
+  semverse
+  sexp_processor
+  shoulda
+  shoulda-context
+  shoulda-matchers
+  simple-tidy
+  simplecov
+  simplecov-html
+  sinatra
+  siren
+  slop
+  solve
+  sourcify
+  sprockets
+  sprockets-rails
+  state_machine
+  stringex
+  systemu
+  term-ansicolor
+  terminal-table
+  test-kitchen
+  test-unit
+  textacular
+  thin
+  thor
+  thread_safe
+  tilt
+  timers
+  tins
+  tmbundle-manager
+  treetop
+  trogdoro-el4r
+  typhoeus
+  tzinfo
+  uglifier
+  unf
+  unf_ext
+  unicorn
+  uuidtools
+  varia_model
+  webrobots
+  will_paginate
+  wmi-lite
+  xcodebuild-rb
+  xcodeproj
+  xcoder
+  xcpretty
+  yajl-ruby
+  yard

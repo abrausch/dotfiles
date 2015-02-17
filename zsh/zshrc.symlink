@@ -46,9 +46,14 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.1.2
+chruby 2.2.0
 
 # antigen
 antigen bundle zsh-users/zsh-syntax-highlighting
 antigen apply
 
+# export PATH="$HOME/.jenv/bin:$PATH"
+# eval "$(jenv init -)"
+
+
+export GEM_EDITOR="mate"

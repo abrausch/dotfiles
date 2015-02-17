@@ -3,6 +3,12 @@ update
 tap caskroom/cask
 tap homebrew/dupes
 tap peco/peco
+tap neovim/homebrew-neovim
+
+cask install google-chrome
+cask install bittorrent-sync
+cask install alfred
+cask alfred
 
 install ack
 install archey
@@ -89,3 +95,12 @@ install yajl
 install zsh
 install zsh-completions
 install peco
+install --HEAD neovim
+
+cask install google-chrome
+cask install bittorrent-sync
+cask install alfred
+cask alfred
+
+cleanup
+cask cleanup
