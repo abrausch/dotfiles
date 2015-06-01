@@ -12,47 +12,48 @@ call vundle#rc()
 
 " let Vundle manage Vundle
 " required!
-Bundle 'gmarik/vundle'
+Plugin 'gmarik/vundle'
 
-" My Bundles here:
+" My Plugins here:
 "
 " original repos on github
-Bundle 'tpope/vim-cucumber'
-Bundle 'tpope/vim-fugitive'
-Bundle 'tpope/vim-rails'
-Bundle 'tpope/vim-rake'
-Bundle 'tpope/vim-bundler'
-Bundle 'tpope/vim-surround'
-Bundle 'tpope/vim-fireplace'
+Plugin 'tpope/vim-cucumber'
+Plugin 'tpope/vim-fugitive'
+Plugin 'tpope/vim-rails'
+Plugin 'tpope/vim-rake'
+Plugin 'tpope/vim-bundler'
+Plugin 'tpope/vim-surround'
+Plugin 'tpope/vim-fireplace'
 
-Bundle 'vim-ruby/vim-ruby'
-Bundle 'ecomba/vim-ruby-refactoring'
-Bundle 'lucapette/vim-ruby-doc'
-Bundle 'astashov/vim-ruby-debugger'
-Bundle 'nanki/treetop.vim'
+Plugin 'vim-ruby/vim-ruby'
+Plugin 'ecomba/vim-ruby-refactoring'
+Plugin 'lucapette/vim-ruby-doc'
+Plugin 'astashov/vim-ruby-debugger'
+Plugin 'nanki/treetop.vim'
+Plugin 'rking/ag.vim'
+Plugin 'trusktr/seti.vim'
 
-Bundle 'msanders/cocoa.vim'
-Bundle 'vim-scripts/csv.vim'
-Bundle 'kien/ctrlp.vim'
-Bundle 'skwp/vim-rspec'
-Bundle 'jnurmine/Zenburn'
-Bundle 'jpalardy/vim-slime'
-Bundle 'scrooloose/syntastic'
-Bundle 'majutsushi/tagbar'
-Bundle 'hallison/vim-markdown'
-Bundle 'scrooloose/nerdtree'
-Bundle 'derekwyatt/vim-fswitch'
-Bundle 'Raimondi/delimitMate'
-Bundle 'airblade/vim-gitgutter.git'
-Bundle 'elixir-lang/vim-elixir'
-Bundle 'jnwhiteh/vim-golang'
-Bundle 'rizzatti/dash.vim'
+Plugin 'msanders/cocoa.vim'
+Plugin 'vim-scripts/csv.vim'
+Plugin 'kien/ctrlp.vim'
+Plugin 'skwp/vim-rspec'
+Plugin 'jnurmine/Zenburn'
+Plugin 'jpalardy/vim-slime'
+Plugin 'scrooloose/syntastic'
+Plugin 'majutsushi/tagbar'
+Plugin 'hallison/vim-markdown'
+Plugin 'scrooloose/nerdtree'
+Plugin 'derekwyatt/vim-fswitch'
+Plugin 'Raimondi/delimitMate'
+Plugin 'airblade/vim-gitgutter.git'
+Plugin 'elixir-lang/vim-elixir'
+Plugin 'jnwhiteh/vim-golang'
+Plugin 'rizzatti/dash.vim'
 
-Bundle 'SirVer/ultisnips'
-Bundle 'Rip-Rip/clang_complete'
+Plugin 'SirVer/ultisnips'
 
 " vim-scripts repos
-Bundle 'matchit.zip'
+Plugin 'matchit.zip'
 
 " ----------------------------------------------------------------------------
 "  Text Formatting
@@ -249,7 +250,7 @@ let g:ruby_debugger_progname = 'mvim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/settings.vim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/grb.vim'
 
-colorscheme codeschool
+colorscheme seti
 
 " Slime settings
 let g:slime_target = "tmux"
@@ -335,3 +336,9 @@ let g:clang_snippets_engine = 'ultisnips'
 nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
 let g:clang_complete_copen = 1
 nnoremap <leader>c :cc<cr>
+
+" Try using hjkl
+map <Left> <Nop>
+map <Right> <Nop>
+map <Up> <Nop>
+map <Down> <Nop>
