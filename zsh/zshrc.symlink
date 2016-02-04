@@ -46,7 +46,7 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.2.0
+chruby 2.2.2
 
 # antigen
 antigen bundle zsh-users/zsh-syntax-highlighting
@@ -57,3 +57,5 @@ antigen apply
 
 
 export GEM_EDITOR="mate"
+
+eval "$(boot2docker shellinit)"
