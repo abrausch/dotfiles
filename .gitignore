@@ -3,3 +3,4 @@ git/gitconfig.symlink
 *.pid
 .DS_Store
 vim/vim.symlink/bundle/
+config/config.symlink/fish/fish_history

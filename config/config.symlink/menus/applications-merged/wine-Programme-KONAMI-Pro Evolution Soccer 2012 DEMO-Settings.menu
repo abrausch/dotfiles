@@ -1,0 +1,24 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>wine-wine</Name>
+    <Directory>wine-wine.directory</Directory>
+  <Menu>
+    <Name>wine-Programme</Name>
+    <Directory>wine-Programme.directory</Directory>
+  <Menu>
+    <Name>wine-Programme-KONAMI</Name>
+    <Directory>wine-Programme-KONAMI.directory</Directory>
+  <Menu>
+    <Name>wine-Programme-KONAMI-Pro Evolution Soccer 2012 DEMO</Name>
+    <Directory>wine-Programme-KONAMI-Pro Evolution Soccer 2012 DEMO.directory</Directory>
+    <Include>
+      <Filename>wine-Programme-KONAMI-Pro Evolution Soccer 2012 DEMO-Settings.desktop</Filename>
+    </Include>
+  </Menu>
+  </Menu>
+  </Menu>
+  </Menu>
+</Menu>

@@ -1,0 +1,20 @@
+<!DOCTYPE Menu PUBLIC "-//freedesktop//DTD Menu 1.0//EN"
+"http://www.freedesktop.org/standards/menu-spec/menu-1.0.dtd">
+<Menu>
+  <Name>Applications</Name>
+  <Menu>
+    <Name>wine-wine</Name>
+    <Directory>wine-wine.directory</Directory>
+  <Menu>
+    <Name>wine-PESEdit.com 2010 Patch</Name>
+    <Directory>wine-PESEdit.com 2010 Patch.directory</Directory>
+  <Menu>
+    <Name>wine-PESEdit.com 2010 Patch-docs</Name>
+    <Directory>wine-PESEdit.com 2010 Patch-docs.directory</Directory>
+    <Include>
+      <Filename>wine-PESEdit.com 2010 Patch-docs-Face List.desktop</Filename>
+    </Include>
+  </Menu>
+  </Menu>
+  </Menu>
+</Menu>
