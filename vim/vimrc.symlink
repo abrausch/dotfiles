@@ -33,11 +33,9 @@ Plugin 'nanki/treetop.vim'
 Plugin 'rking/ag.vim'
 Plugin 'trusktr/seti.vim'
 
-Plugin 'msanders/cocoa.vim'
 Plugin 'vim-scripts/csv.vim'
 Plugin 'kien/ctrlp.vim'
 Plugin 'skwp/vim-rspec'
-Plugin 'jnurmine/Zenburn'
 Plugin 'jpalardy/vim-slime'
 Plugin 'scrooloose/syntastic'
 Plugin 'majutsushi/tagbar'
@@ -49,8 +47,7 @@ Plugin 'airblade/vim-gitgutter.git'
 Plugin 'elixir-lang/vim-elixir'
 Plugin 'jnwhiteh/vim-golang'
 Plugin 'rizzatti/dash.vim'
-
-Plugin 'SirVer/ultisnips'
+Plugin 'Shougo/neocomplete.vim'
 
 " vim-scripts repos
 Plugin 'matchit.zip'
@@ -169,18 +166,6 @@ function! StripWhitespace ()
 endfunction
 map ,w :call StripWhitespace ()<CR>
 
-" ---------------------------------------------------------------------------
-" Omni complete
-" Removed because of supertab
-" ---------------------------------------------------------------------------
-"set ofu=syntaxcomplete#Complete
-set completeopt=menu,preview
-inoremap <expr> <CR> pumvisible() ? "\<C-y>" : "\<C-g>u\<CR>"
-"inoremap <expr> <C-n> pumvisible() ? '<C-n>' :
-"      \ '<C-n><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-"inoremap <expr> <M-,> pumvisible() ? '<C-n>' :
-"      \ '<C-x><C-o><C-n><C-p><C-r>=pumvisible() ? "\<lt>Down>" : ""<CR>'
-
 " -------
 " Autocommand
 " -------
@@ -197,49 +182,6 @@ if has ("autocmd")
   au BufRead,BufNewFile *.wiki set filetype=tracwiki
 endif
 
-"--------------
-" CTRLP
-"-------------
-let g:ctrlp_buftag_types = {'objc': '--language-force=objc --objc-types=mpci'}
-map <leader>6 :CtrlPBufTag<CR>
-
-" -------
-"  Tagbar
-"  ------
-" add a definition for Objective-C to tagbar
-let g:tagbar_type_objc = {
-    \ 'ctagstype' : 'ObjectiveC',
-    \ 'kinds'     : [
-        \ 'i:interface',
-        \ 'I:implementation',
-        \ 'p:Protocol',
-        \ 'm:Object_method',
-        \ 'c:Class_method',
-        \ 'v:Global_variable',
-        \ 'F:Object field',
-        \ 'f:function',
-        \ 'p:property',
-        \ 't:type_alias',
-        \ 's:type_structure',
-        \ 'e:enumeration',
-        \ 'M:preprocessor_macro',
-    \ ],
-    \ 'sro'        : ' ',
-    \ 'kind2scope' : {
-        \ 'i' : 'interface',
-        \ 'I' : 'implementation',
-        \ 'p' : 'Protocol',
-        \ 's' : 'type_structure',
-        \ 'e' : 'enumeration'
-    \ },
-    \ 'scope2kind' : {
-        \ 'interface'      : 'i',
-        \ 'implementation' : 'I',
-        \ 'Protocol'       : 'p',
-        \ 'type_structure' : 's',
-        \ 'enumeration'    : 'e'
-    \ }
-\ }
 
 " -------
 " Ruby debugger
@@ -250,7 +192,7 @@ let g:ruby_debugger_progname = 'mvim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/settings.vim'
 exe 'source ~/.dotfiles/vim/vim.symlink/plugins/abrausch/before/plugin/grb.vim'
 
-colorscheme seti
+colorscheme Tomorrow-Night-Bright
 
 " Slime settings
 let g:slime_target = "tmux"
@@ -264,13 +206,6 @@ set foldnestmax=10
 set nofoldenable
 set foldlevel=1
 
-" Add all tag files in ./tags/
-"let &tags=""
-"let s:tfs=split(globpath(".", "tags/*.tags"),"\n")
-"for s:tf in s:tfs
-"  let &tags.=",".expand(escape(escape(s:tf, " "), " "))
-"endfor
-"
 " rcodetools
 " plain annotations
 map <silent> <F10> !xmpfilter -a<cr>
@@ -314,28 +249,6 @@ function! RemoveRubyEval() range
   set nolz
   redraw
 endfunction
-
-" clang_complete settings
-let g:clang_library_path="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib"
-let g:clang_auto_user_options="compile_commands.json, path, .clang_complete"
-
-let g:clang_complete_auto = 1
-let g:clang_use_library = 1
-let g:clang_periodic_quickfix = 0
-let g:clang_close_preview = 1
-let g:clang_debug = 1
-
-" For Objective-C, this needs to be active, otherwise multi-parameter methods won't be completed correctly
-let g:clang_snippets = 1
-let g:clang_auto_select = 1
-
-" Snipmate does not work anymore, ultisnips is the recommended plugin
-let g:clang_snippets_engine = 'ultisnips'
-
-" show diagnostics
-nnoremap <Leader>q :call g:ClangUpdateQuickFix()<CR>
-let g:clang_complete_copen = 1
-nnoremap <leader>c :cc<cr>
 
 " Try using hjkl
 map <Left> <Nop>

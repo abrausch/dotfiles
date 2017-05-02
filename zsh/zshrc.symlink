@@ -58,4 +58,7 @@ antigen apply
 
 export GEM_EDITOR="mate"
 
-eval "$(boot2docker shellinit)"
+# eval "$(boot2docker shellinit)"
+
+alias tmux="TERM=screen-256color-bce tmux"
+
