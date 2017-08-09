@@ -42,8 +42,3 @@ map <C-n> :NERDTreeToggle<CR>
 nmap <silent> <Leader>of :FSHere<cr>
 nmap <silent> <Leader>oK :FSSplitAbove<cr>
 nmap <silent> <Leader>oj :FSBelow<cr>
-
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>

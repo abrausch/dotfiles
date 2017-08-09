@@ -18,8 +18,12 @@ then
 fi
 
 # initialize autocomplete here, otherwise functions won't be loaded
-autoload -U compinit
-compinit
+autoload -Uz compinit
+if [ $(date +'%j') != $(stat -f '%Sm' -t '%j' ~/.zcompdump) ]; then
+  compinit
+else
+  compinit -C
+fi
 
 # load every completion after autocomplete loads
 for config_file ($ZSH/**/completion.sh) source $config_file
@@ -47,10 +51,6 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
 chruby 2.2.2
-
-# antigen
-antigen bundle zsh-users/zsh-syntax-highlighting
-antigen apply
 
 # export PATH="$HOME/.jenv/bin:$PATH"
 # eval "$(jenv init -)"

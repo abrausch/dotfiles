@@ -249,9 +249,3 @@ function! RemoveRubyEval() range
   set nolz
   redraw
 endfunction
-
-" Try using hjkl
-map <Left> <Nop>
-map <Right> <Nop>
-map <Up> <Nop>
-map <Down> <Nop>
