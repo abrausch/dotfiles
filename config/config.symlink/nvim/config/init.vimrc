@@ -48,6 +48,11 @@ Plug 'racer-rust/vim-racer'
 " elixir
 Plug 'elixir-lang/vim-elixir'
 
+" clojure
+Plug 'tpope/vim-fireplace'
+Plug 'guns/vim-sexp'
+Plug 'tpope/vim-sexp-mappings-for-regular-people'
+
 " other
 Plug 'mattn/emmet-vim'
 Plug 'ciaranm/detectindent'

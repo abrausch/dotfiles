@@ -4,3 +4,4 @@ git/gitconfig.symlink
 .DS_Store
 vim/vim.symlink/bundle/
 config/config.symlink/fish/fish_history
+config/config.symlink/nvim/plugged/

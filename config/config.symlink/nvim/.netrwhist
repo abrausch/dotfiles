@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/abrausch/Projekte/clojure/sample1'
+let g:netrw_dirhist_2='/Users/abrausch/Projekte/clojure/sample1/src'
+let g:netrw_dirhist_3='/Users/abrausch/Projekte/clojure/sample1/src/sample1'
+let g:netrw_dirhist_4='/Users/abrausch/Projekte/clojure/sample1'
+let g:netrw_dirhist_5='/Users/abrausch/Projekte/clojure/sample1/src'
+let g:netrw_dirhist_6='/Users/abrausch/Projekte/clojure/sample1/src/sample1'
