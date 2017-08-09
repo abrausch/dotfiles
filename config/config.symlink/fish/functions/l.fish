@@ -1,3 +1,3 @@
 function l
-  ls -ltr
+  gls -ltr $argv
 end

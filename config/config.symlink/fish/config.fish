@@ -1,17 +1,19 @@
-set fisher_home ~/.local/share/fisherman
-set fisher_config ~/.config/fisherman
-source $fisher_home/config.fish
-
 set -g -x PATH /usr/local/bin $PATH
-set -g -x PATH /Users/abrausch/Projekte/DirtyLittleHelper $PATH
-set -g -x PATH /Users/abrausch/bin $PATH
-set -g -x PATH /Users/abrausch/Projekte/Caperwhite/git/Xcode/bin $PATH
-set -g -x PATH /Users/abrausch/Projekte/Caperwhite/git/Xcode/Scripts $PATH
+set -g -x PATH /usr/local/sbin $PATH
+set -g -x PATH /$HOME $PATH
+set -g -x PATH /Applications/TextMate.app/Contents/Resources/ $PATH
+set -g -x PATH $PATH /usr/bin /bin /usr/sbin /sbin  /usr/X11/bin /opt/local/bin
+set -g EDITOR vim
 
-# autojump
-[ -f /usr/local/share/autojump/autojump.fish ]
-. /usr/local/share/autojump/autojump.fish
+set -g JAVA_HOME /Library/Java/JavaVirtualMachines/java/Contents/Home
+set -g SCALA_HOME /usr/local/scala/
 
-#chruby
+# autojumo
+if test -f /Users/abrausch/.autojump/share/autojump/autojump.fish; . /Users/abrausch/.autojump/share/autojump/autojump.fish; end
+
+# chruby
 source /usr/local/share/chruby/chruby.fish
 chruby 2.2.2
+
+# gem editor
+set -g GEM_EDITOR mate
