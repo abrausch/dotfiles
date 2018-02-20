@@ -1,0 +1,1 @@
+/Users/abrausch/.config/fisherman/getopts/getopts.fish

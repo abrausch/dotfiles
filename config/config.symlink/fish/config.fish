@@ -8,8 +8,6 @@ set -g EDITOR vim
 set -g JAVA_HOME /Library/Java/JavaVirtualMachines/java/Contents/Home
 set -g SCALA_HOME /usr/local/scala/
 
-# autojumo
-if test -f /Users/abrausch/.autojump/share/autojump/autojump.fish; . /Users/abrausch/.autojump/share/autojump/autojump.fish; end
 
 # chruby
 source /usr/local/share/chruby/chruby.fish

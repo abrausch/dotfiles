@@ -50,7 +50,7 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.2.2
+chruby 2.4.2
 
 # export PATH="$HOME/.jenv/bin:$PATH"
 # eval "$(jenv init -)"
