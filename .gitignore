@@ -5,4 +5,5 @@ git/gitconfig.symlink
 vim/vim.symlink/bundle/
 config/config.symlink/fish/fish_history
 config/config.symlink/nvim/plugged/
-config/config.symlink/nvim/undodir
+config/config.symlink/nvim/undodir/
+config/config.symlink/nvim/backup/

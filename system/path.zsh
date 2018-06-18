@@ -11,3 +11,4 @@ export PATH=$PATH:~/bin/oclint-0.7/bin
 export PATH=$HOME/.cask/bin:$PATH
 export PATH=$PATH:~/bin/oclint/bin
 export MANPATH="/usr/local/man:/usr/local/mysql/man:/usr/local/git/man:$MANPATH"
+export POWERLINE_CONFIG_COMMAND=/usr/local/bin/powerline-config

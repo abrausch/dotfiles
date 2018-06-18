@@ -30,10 +30,9 @@ for config_file ($ZSH/**/completion.sh) source $config_file
 
 setopt promptsubst
 
-# Load the prompt theme system
-autoload -U promptinit
-promptinit
-prompt abr
+# Set Spaceship ZSH as a prompt
+autoload -U promptinit; promptinit
+prompt spaceship
 
 # Load zsh completion
 fpath=(/usr/local/share/zsh-completions $fpath)
@@ -50,7 +49,7 @@ export LSCOLORS="Gxfxcxdxbxegedabagacad"
 
 # chruby configuration
 source /usr/local/opt/chruby/share/chruby/chruby.sh
-chruby 2.4.2
+chruby 2.4.1
 
 # export PATH="$HOME/.jenv/bin:$PATH"
 # eval "$(jenv init -)"
@@ -61,4 +60,6 @@ export GEM_EDITOR="mate"
 # eval "$(boot2docker shellinit)"
 
 alias tmux="TERM=screen-256color-bce tmux"
+export LC_ALL=en_US.UTF-8
+export LANG=en_US.UTF-8
 
